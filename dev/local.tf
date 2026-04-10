@@ -1,4 +1,4 @@
-# Fetch latest Ubuntu 20.04 AMI if ami_id not explicitly provided
+# Fetch latest Ubuntu 20.04 AMI if ami_id not explicitly provided....
 data "aws_ami" "ubuntu_latest" {
   count       = var.ami_id == "" ? 1 : 0
   most_recent = true
